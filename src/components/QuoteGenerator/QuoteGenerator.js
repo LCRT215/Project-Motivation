@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./QuoteGenerator.css";
 
 const useFetch = url => {
   const [quotes, setQuotes] = useState();
@@ -30,9 +31,13 @@ function QuoteGenerator() {
   );
   return (
     <div className="QuoteGenerator">
-      <h2> Here's something to keep in mind today...</h2>
-      {loading ? <div> ...loading </div> : <div> {quotes}</div>}
-      <button onClick={refreshPage}>
+      <h2 className="title"> Here's something to keep in mind today...</h2>
+      {loading ? (
+        <div className="loading"> ...loading </div>
+      ) : (
+        <div className="quote"> {quotes}</div>
+      )}
+      <button className="button" onClick={refreshPage}>
         Click for a little extra motivation 😊
       </button>
     </div>
