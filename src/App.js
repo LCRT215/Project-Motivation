@@ -7,8 +7,8 @@ import Nav from "./components/Nav/Nav";
 // Things to add to this project:
 // - Time and date api
 // - Weather api
-// - Link to favorite sites?
 // - Add memes and videos that make me laugh lol
+// - Link to favorite sites?
 // - Make api with own quotes? (later update)
 function App() {
   return (
