@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./QuoteGenerator.css";
+import Signature from "../Signature/Signature";
 
 const useFetch = url => {
   const [quotes, setQuotes] = useState();
@@ -37,6 +38,7 @@ function QuoteGenerator() {
       ) : (
         <div className="quote"> {quotes}</div>
       )}
+      <Signature />
       <button className="button" onClick={refreshPage}>
         Click for a little extra motivation 😊
       </button>
