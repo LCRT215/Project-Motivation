@@ -2,10 +2,11 @@ import React from "react";
 import "../Nav/Nav.css";
 import Weather from "../Weather/Weather";
 import Clock from "react-live-clock";
+import Date from "./Date";
 
 function NavBar() {
-  const myDate = new Date();
-  const hrs = myDate.getHours();
+  var myDate = new Date();
+  let hrs = myDate.getHours();
   let greeting;
 
   if (hrs < 12) greeting = "Good Morning";
@@ -15,13 +16,7 @@ function NavBar() {
   return (
     <div className="nav-container">
       <p className="greeting">{greeting}</p>
-
-      {/* DAY */}
-      <Clock format={"dddd"} ticking={true} timezone={"US/Eastern"} />
-      {/* DATE */}
-      <Clock format={"LL"} ticking={true} timezone={"US/Eastern"} />
-      {/* TIME */}
-      <Clock format={"LT"} date={""} ticking={true} timezone={"US/Eastern"} />
+      <Date />
     </div>
   );
 }
