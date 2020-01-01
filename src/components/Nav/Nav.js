@@ -5,9 +5,9 @@ import Clock from "react-live-clock";
 import Date from "./Date";
 
 function NavBar() {
-  var myDate = new Date();
-  let hrs = myDate.getHours();
-  let greeting;
+  var date = new Date();
+  var hrs = date.getHours();
+  var greeting;
 
   if (hrs < 12) greeting = "Good Morning";
   else if (hrs >= 12 && hrs <= 17) greeting = "Good Afternoon";
