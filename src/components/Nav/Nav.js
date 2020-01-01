@@ -2,7 +2,7 @@ import React from "react";
 import "../Nav/Nav.css";
 import Weather from "../Weather/Weather";
 import Clock from "react-live-clock";
-import Date from "./Date";
+import DateTime from "./Date";
 
 function NavBar() {
   var date = new Date();
@@ -16,7 +16,7 @@ function NavBar() {
   return (
     <div className="nav-container">
       <p className="greeting">{greeting}</p>
-      <Date />
+      <DateTime />
     </div>
   );
 }

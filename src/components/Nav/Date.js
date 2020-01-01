@@ -2,7 +2,7 @@ import React from "react";
 import "../Nav/Nav.css";
 import Clock from "react-live-clock";
 
-function Date() {
+function DateTime() {
   return (
     <div className="date-container">
       {/* DAY */}
@@ -15,4 +15,4 @@ function Date() {
   );
 }
 
-export default Date;
+export default DateTime;
