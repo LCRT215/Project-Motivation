@@ -1,11 +1,19 @@
-.title {
+.QuoteGenerator {
+  width: 70%;
+  margin: 0 auto;
+  border: orange dotted 2px;
+  padding: 3% 10%;
+}
+
+.quoteTitle {
   font-size: 30px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .quote {
-  width: 50%;
+  /* width: 80%; */
   margin: 0 auto;
+  margin-top: 5%;
 }
-.button {
-  margin-top: 25px;
+.newQuoteButton {
+  margin-top: 5%;
 }

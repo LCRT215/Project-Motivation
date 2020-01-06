@@ -4,13 +4,24 @@ import Clock from "react-live-clock";
 
 function DateTime() {
   return (
-    <div className="date-container">
+    <div className="dateContainer">
       {/* DAY */}
-      <Clock format={"dddd"} ticking={true} timezone={"US/Eastern"} />
+      <span className="dateDay">
+        <Clock
+          // style={}
+          format={"dddd"}
+          ticking={true}
+          timezone={"US/Eastern"}
+        />
+      </span>
       {/* DATE */}
-      <Clock format={"LL"} ticking={true} timezone={"US/Eastern"} />
+      <a className="dateDate">
+        <Clock format={"LL"} ticking={true} timezone={"US/Eastern"} />
+      </a>
       {/* TIME */}
-      <Clock format={"LT"} date={""} ticking={true} timezone={"US/Eastern"} />
+      <a className="dateTime">
+        <Clock format={"LT"} date={""} ticking={true} timezone={"US/Eastern"} />
+      </a>
     </div>
   );
 }
