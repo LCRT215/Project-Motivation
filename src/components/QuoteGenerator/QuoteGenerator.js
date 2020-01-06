@@ -32,14 +32,14 @@ function QuoteGenerator() {
   );
   return (
     <div className="QuoteGenerator">
-      <h2 className="title"> Here's something to keep in mind today...</h2>
+      <h2 className="quoteTitle"> Here's something to keep in mind today...</h2>
       {loading ? (
         <div className="loading"> ...loading </div>
       ) : (
         <div className="quote"> {quotes}</div>
       )}
       <Signature />
-      <button className="button" onClick={refreshPage}>
+      <button className="newQuoteButton" onClick={refreshPage}>
         Click for a little extra motivation 😊
       </button>
     </div>
