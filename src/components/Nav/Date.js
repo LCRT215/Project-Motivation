@@ -15,10 +15,13 @@ function DateTime() {
         />
       </span>
       {/* DATE */}
+      <br />
+
       <a className="dateDate">
         <Clock format={"LL"} ticking={true} timezone={"US/Eastern"} />
       </a>
       {/* TIME */}
+      <br />
       <a className="dateTime">
         <Clock format={"LT"} date={""} ticking={true} timezone={"US/Eastern"} />
       </a>
