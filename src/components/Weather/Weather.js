@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const useFetch = url => {
   const [weather, setWeather] = useState();
-  // const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchWeather() {
