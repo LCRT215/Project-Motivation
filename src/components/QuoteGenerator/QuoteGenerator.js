@@ -12,7 +12,7 @@ const useFetch = url => {
       const response = await fetch(url);
       const data = await response.json();
       const quote = data[random].excerpt.rendered.replace(/<[^>]*>?/gm, "");
-      // console.log(`data:`, data[0].excerpt.rendered);
+      /// console.log(`data:`, data[0].excerpt.rendered);
       setQuotes(quote);
       setLoading(false);
     }
