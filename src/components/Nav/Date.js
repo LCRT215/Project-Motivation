@@ -1,30 +1,39 @@
 import React from "react";
 import "../Nav/Nav.css";
 import Clock from "react-live-clock";
+import "./Date.css";
 
 function DateTime() {
   return (
     <div className="dateContainer">
       {/* DAY */}
-      <span className="dateDay">
-        <Clock
-          // style={}
-          format={"dddd"}
-          ticking={true}
-          timezone={"US/Eastern"}
-        />
-      </span>
-      {/* DATE */}
-      <br />
 
-      <a className="dateDate">
-        <Clock format={"LL"} ticking={true} timezone={"US/Eastern"} />
-      </a>
+      <Clock
+        // style={}
+        className="day"
+        format={"dddd"}
+        ticking={true}
+        timezone={"US/Eastern"}
+      />
+
+      {/* DATE */}
+
+      <Clock
+        className="date"
+        format={"LL"}
+        ticking={true}
+        timezone={"US/Eastern"}
+      />
+
       {/* TIME */}
-      <br />
-      <a className="dateTime">
-        <Clock format={"LT"} date={""} ticking={true} timezone={"US/Eastern"} />
-      </a>
+
+      <Clock
+        className="time"
+        format={"LT"}
+        date={""}
+        ticking={true}
+        timezone={"US/Eastern"}
+      />
     </div>
   );
 }
