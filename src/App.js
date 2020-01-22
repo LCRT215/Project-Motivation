@@ -13,7 +13,7 @@ import TodoList from "./components/TodoList/TodoList";
 // - Make api with own quotes? (later update)
 // - Add Auth so user can add their own motivational quotes (firebase or Oauth?)
 // - Favorite links
-// - Todo
+
 function App() {
   return (
     <div className="App">
