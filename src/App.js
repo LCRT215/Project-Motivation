@@ -6,10 +6,12 @@ import Nav from "./components/Nav/Nav";
 import TodoList from "./components/TodoList/TodoList";
 
 // Things to add to this project:
+// Make into a home page replacer? 
 // - Make api with own quotes
 // - Weather api
 // - Link to favorite sites?
 // - Add Auth so user can add their own motivational quotes?? (firebase or Oauth?)
+// - Add feedback component
 
 function App() {
   return (
