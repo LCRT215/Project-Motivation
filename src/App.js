@@ -11,7 +11,7 @@ import TodoList from "./components/TodoList/TodoList";
 // - Weather api
 // - Link to favorite sites?
 // - Add Auth so user can add their own motivational quotes?? (firebase or Oauth?)
-// - Add feedback component
+// - Add feedback componen
 
 function App() {
   return (
