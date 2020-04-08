@@ -1,14 +1,15 @@
 .dateContainer {
-  border: solid green 2px;
-  // display: flex;
-  // justify-content: flex-end;
+  // border: solid pink 2px;
+  display: flex;
+  justify-content: flex-end;
   // flex-wrap: nowrap;
 }
-.day {
+.dayContainer {
   // border: solid pink 2px;
+  margin-right: 5px;
 }
 .date {
-  // border: solid pink 2px;
+  margin-right: 5px;
 }
 .time {
   // border: solid pink 2px;
