@@ -6,6 +6,7 @@ import Night from "../Nav/svg/002-curtain.svg";
 import Day from "../Nav/svg/003-window-1.svg";
 
 // import Weather from "../Weather/Weather";
+//
 // import Clock from "react-live-clock";
 
 function NavBar() {
