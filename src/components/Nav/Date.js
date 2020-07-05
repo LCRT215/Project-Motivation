@@ -7,14 +7,16 @@ function DateTime() {
   return (
     <div className="dateContainer">
       {/* DAY */}
-
-      <Clock
-        // style={}
-        className="day"
-        format={"dddd"}
-        ticking={true}
-        timezone={"US/Eastern"}
-      />
+      <div className="dayContainer">
+        <Clock
+          // style={}
+          className="day"
+          format={"dddd"}
+          ticking={true}
+          timezone={"US/Eastern"}
+        />
+        {","}
+      </div>
 
       {/* DATE */}
 

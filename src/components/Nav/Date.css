@@ -1,4 +1,17 @@
 .dateContainer {
-  border: solid green 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.dayContainer {
+  margin-right: 5px;
+}
+
+.date {
+  margin-right: 5px;
 }
 /*# sourceMappingURL=Date.css.map */

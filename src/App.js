@@ -12,6 +12,7 @@ import TodoList from "./components/TodoList/TodoList";
 // - Link to favorite sites?
 // - Add Auth so user can add their own motivational quotes?? (firebase or Oauth?)
 // - Add feedback component
+// - Login option?
 
 function App() {
   return (
