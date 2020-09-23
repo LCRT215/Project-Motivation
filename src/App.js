@@ -13,6 +13,7 @@ import TodoList from "./components/TodoList/TodoList";
 // - Add Auth so user can add their own motivational quotes?? (firebase or Oauth?)
 // - Add feedback component
 // - Login option?
+//  - correct refresh page on quote generator button
 
 function App() {
   return (

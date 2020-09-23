@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./QuoteGenerator.css";
 import Signature from "../Signature/Signature";
+import loader from "./loader.svg";
 
-const useFetch = url => {
+const useFetch = (url) => {
   const [quotes, setQuotes] = useState();
   const [loading, setLoading] = useState(true);
   const random = Math.floor(Math.random() * 10);
@@ -12,7 +13,6 @@ const useFetch = url => {
       const response = await fetch(url);
       const data = await response.json();
       const quote = data[random].excerpt.rendered.replace(/<[^>]*>?/gm, "");
-      /// console.log(`data:`, data[0].excerpt.rendered);
       setQuotes(quote);
       setLoading(false);
     }
@@ -33,11 +33,13 @@ function QuoteGenerator() {
   return (
     <div className="QuoteGenerator">
       <h2 className="quoteTitle"> Here's something to keep in mind today...</h2>
-      {loading ? (
-        <div className="loading"> ...loading </div>
-      ) : (
-        <div className="quote"> {quotes}</div>
-      )}
+      <div className="quoteImgContainer">
+        {loading ? (
+          <img className="navImg" src={loader} />
+        ) : (
+          <div className="quote"> {quotes}</div>
+        )}
+      </div>
       <Signature />
       <button className="newQuoteButton" onClick={refreshPage}>
         Click for a little extra motivation 😊
